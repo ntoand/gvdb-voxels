@@ -885,6 +885,11 @@ void NVPWindow::clearScreenGL ()
 	glClear ( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
 }
 
+void NVPWindow::renderScreenQuadGL(int glid, char inv1)
+{
+    renderScreenQuadGL ( glid, (float)0, (float)0, (float)getWidth(), (float)getHeight()); 
+}
+
 void NVPWindow::renderScreenQuadGL ( int glid, float x1, float y1, float x2, float y2 )
 {
 	// Prepare pipeline

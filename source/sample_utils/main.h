@@ -275,6 +275,7 @@
 	  int			m_screenquad_vshader;
 	  int			m_screenquad_fshader;
 	  int			m_screenquad_vbo[3];
+	  int 			m_screenquad_utex;
 	  int			m_screenquad_utex1;
 	  int			m_screenquad_utex2;
 	  int			m_screenquad_utexflags;
@@ -352,6 +353,7 @@
 	  void renderScreenQuadGL(int glid, char inv1=0);
 	  void compositeScreenQuadGL(int glid1, int glid2, char inv1=0, char inv2=0 );
 	  void renderScreenQuadGL ( int glid1, int glid2, float x1, float y1, float x2, float y2, char inv1=0, char inv2=0 );
+	  void renderScreenQuadGL ( int glid, float x1, float y1, float x2, float y2 );
 
 	  //////////////////////////////////////////////////////////////////////////
 	  // system related

@@ -780,7 +780,7 @@ Matrix4F &Matrix4F::InverseProj ( const float* mat )
 	return *this;
 }
 
-Matrix4F &Matrix4F::InverseView ( const float* mat, Vector3DF& pos)
+Matrix4F &Matrix4F::InverseView ( const float* mat, const Vector3DF& pos)
 {
 	// NOTE: Assumes there is no scaling in input matrix.
 	// Although there can be translation (typical of a view matrix)

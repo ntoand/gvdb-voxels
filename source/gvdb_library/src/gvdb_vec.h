@@ -435,7 +435,7 @@
 
 		Matrix4F &operator= ( float* mat);
 		Matrix4F &InverseProj ( const float* mat );
-		Matrix4F &InverseView ( const float* mat, Vector3DF& pos );
+		Matrix4F &InverseView ( const float* mat, const Vector3DF& pos );
 		Vector4DF GetT ( float* mat );
 
 		int GetX()			{ return 4; }
